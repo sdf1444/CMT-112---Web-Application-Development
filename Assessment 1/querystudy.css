@@ -1,0 +1,2821 @@
+/* CSS to keep body fixed at all media queries. Taken from w3school.com developer tools Accessed 29/10/18. */  
+body {
+    position: relative;
+    min-height: 100%;
+    top: 0px;
+} 
+/* End of reference */  
+@media only screen and (min-width: 50px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;  
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 50vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 80vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 120vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 200vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 640vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 690vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 800vw;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 1200vw;
+        left: 0;
+        padding-bottom: 100vw;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 1260vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 10vw;
+        padding-bottom: 0;
+        padding: 1vw;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 1300vw;
+        background-color: #A993FF;
+    }
+}
+
+@media only screen and (min-width: 100px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 40vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 140vw;
+        left: 0;
+        width: 97vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 580vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 620vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 720vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 97vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 1150vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 1200vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -25vw;
+        padding-top: 5vw;
+        padding-bottom: 1200vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+@media only screen and (min-width: 150px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 40vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 140vw;
+        left: 0;
+        width: 97vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 580vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 620vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 720vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 97vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 1150vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 1200vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -16vw;
+        padding-top: 5vw;
+        padding-bottom: 1250vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 200px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 40vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 140vw;
+        left: 0;
+        width: 97vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 580vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 620vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 720vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 97vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 1150vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 1200vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -12vw;
+        padding-top: 5vw;
+        padding-bottom: 1250vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 250px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 130vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 230vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 260vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 330vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 420vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 460vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -10vw;
+        padding-top: 5vw;
+        padding-bottom: 500vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 300px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 130vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 230vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 260vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 330vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 420vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 460vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -10vw;
+        padding-top: 5vw;
+        padding-bottom: 500vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 350px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 130vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 230vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 260vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 330vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 420vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 460vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -8vw;
+        padding-top: 5vw;
+        padding-bottom: 500vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 400px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 18vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 130vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 230vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 260vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 330vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 420vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 460vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -8vw;
+        padding-top: 5vw;
+        padding-bottom: 500vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 450px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 16vw;
+        top: 10vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 135vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 195vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 220vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 290vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 345vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 375vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -8vw;
+        padding-top: 5vw;
+        padding-bottom: 400vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 500px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 16vw;
+        top: 12vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 135vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 195vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 220vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 290vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 345vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 375vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -6vw;
+        padding-top: 5vw;
+        padding-bottom: 400vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 550px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 16vw;
+        top: 12vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 135vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 195vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 220vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 290vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 345vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 375vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -6vw;
+        padding-top: 5vw;
+        padding-bottom: 400vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 600px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */        
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */  
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        top: 0;
+        font-size: 10vw;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        width: 30vw;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+
+    .study h1 {
+        position: absolute;
+        font-size: 16vw;
+        top: 12vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 35vw;
+        width: 100vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 70vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 135vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .engineering h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 195vw;
+        left: 0;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 220vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        top: 290vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    
+    .drama h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 345vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 375vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .drama p {
+        display: none;
+    }
+
+    .vertical_nav_bar ul {
+        display: none;
+    }
+
+    .footer h1 {
+        display: none;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -6vw;
+        padding-top: 5vw;
+        padding-bottom: 400vw;
+        background-color: #A993FF;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 768px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */                                
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+/* End of reference */
+    .header h1 a {
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 3.8vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.7vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+/* CSS for horizontal navigation bar. Accessed 29/10/18. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+    .topnav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.7vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+/* End of reference */
+    .study h1 {
+        position: absolute;
+        font-size: 8vw;
+        top: 10vw;
+        left: 0;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        top: 23vw;
+        left: 68vw;
+        font-size: 4vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        top: 30vw;
+        left: 68vw;
+        width: 30vw;
+        font-size: 3vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 26vw;
+        left: 0;
+        height: 32vw;
+        width: 36vw;
+    }
+
+    .engineering h1 {
+        top: 60vw;
+        left: 0;
+        font-size: 4vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        font-size: 3vw;
+        top: 70vw;
+        left: 0;
+        margin: 0;
+        width: 30vw;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 65vw;
+        left: 65vw;
+        height: 32vw;
+        width: 36vw;
+    }
+
+    .drama h1 {
+        font-size: 4vw;
+        top: 103vw;
+        left: 68vw;
+    }
+
+    .drama p {
+        display: block;
+        position: absolute;
+        font-size: 3vw;
+        top: 108vw;
+        left: 68vw;
+        width: 30vw;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 105vw;
+        left: 0;
+        height: 32vw;
+        width: 36vw;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        font-size: 3vw;
+        top: 150vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+    }
+
+    .vertical_nav_bar li a {
+        display: block;
+        color: #000;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+/* End of reference */
+    .footer h1 {
+        display: block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 157vw;
+        left: 61vw;
+        width: 40vw;
+        margin: 0;
+        padding: 0;
+        color: #ffbf00;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 18vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 130.5vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 13vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 992px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */                                
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+/* End of reference */
+    .header h1 a {
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 3.8vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+/* CSS for horizontal navigation bar. Accessed 29/10/18. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+    .topnav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.6vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+/* End of reference */
+    .study h1 {
+        position: absolute;
+        font-size: 8vw;
+        top: 10vw;
+        left: 0;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        top: 23vw;
+        left: 68vw;
+        font-size: 4vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        top: 30vw;
+        left: 68vw;
+        width: 30vw;
+        font-size: 3vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 26vw;
+        left: 0;
+        height: 32vw;
+        width: 36vw;
+    }
+
+    .engineering h1 {
+        top: 60vw;
+        left: 0;
+        font-size: 4vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        font-size: 3vw;
+        top: 70vw;
+        left: 0;
+        margin: 0;
+        width: 30vw;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 65vw;
+        left: 65vw;
+        height: 32vw;
+        width: 36vw;
+    }
+
+    .drama h1 {
+        font-size: 4vw;
+        top: 103vw;
+        left: 68vw;
+    }
+
+    .drama p {
+        display: block;
+        position: absolute;
+        font-size: 3vw;
+        top: 108vw;
+        left: 68vw;
+        width: 30vw;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 105vw;
+        left: 0;
+        height: 32vw;
+        width: 36vw;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        font-size: 3vw;
+        top: 150vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+    }
+
+    .vertical_nav_bar li a {
+        display: block;
+        color: #000;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+/* End of reference */
+    .footer h1 {
+        display: block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 157vw;
+        left: 61vw;
+        width: 40vw;
+        margin: 0;
+        padding: 0;
+        color: #ffbf00;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 18vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 132vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 13vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 1200px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */                                
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+/* End of reference */
+    .header h1 a {
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 3.8vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+/* CSS for horizontal navigation bar. Accessed 29/10/18. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+    .topnav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .topnav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.5vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+/* End of reference */
+    .study h1 {
+        position: absolute;
+        font-size: 8vw;
+        top: 10vw;
+        left: 0;
+    }
+
+    .film_studies h1 {
+        position: absolute;
+        top: 23vw;
+        left: 68vw;
+        font-size: 4vw;
+    }
+
+    .film_studies p {
+        position: absolute;
+        top: 30vw;
+        left: 68vw;
+        width: 30vw;
+        font-size: 3vw;
+    }
+
+    .film_studies img {
+        position: absolute;
+        top: 26vw;
+        left: 0;
+        height: 32vw;
+        width: 36vw;
+    }
+
+    .engineering h1 {
+        top: 60vw;
+        left: 0;
+        font-size: 4vw;
+    }
+
+    .engineering p {
+        position: absolute;
+        font-size: 3vw;
+        top: 70vw;
+        left: 0;
+        margin: 0;
+        width: 30vw;
+    }
+
+    .engineering img {
+        position: absolute;
+        top: 65vw;
+        left: 65vw;
+        height: 32vw;
+        width: 36vw;
+    }
+
+    .drama h1 {
+        font-size: 4vw;
+        top: 103vw;
+        left: 68vw;
+    }
+
+    .drama p {
+        display: block;
+        position: absolute;
+        font-size: 3vw;
+        top: 108vw;
+        left: 68vw;
+        width: 30vw;
+    }
+
+    .drama img {
+        position: absolute;
+        top: 105vw;
+        left: 0;
+        height: 32vw;
+        width: 36vw;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        font-size: 3vw;
+        top: 150vw;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+    }
+
+    .vertical_nav_bar li a {
+        display: block;
+        color: #000;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+/* End of reference */
+    .footer h1 {
+        display: block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 157vw;
+        left: 61vw;
+        width: 40vw;
+        margin: 0;
+        padding: 0;
+        color: #ffbf00;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 18vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 133vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 13vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}

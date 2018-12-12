@@ -1,0 +1,4898 @@
+/* CSS to keep body fixed at all media queries. Taken from w3school.com developer tools Accessed 29/10/18. */  
+body {
+	position: relative;
+    min-height: 100%;
+    top: 0px;
+}	
+/* End of reference */	
+@media only screen and (min-width: 50px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */ 	
+	html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+        border: 15px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+	.slogan h1 {
+    	position: absolute;
+    	text-transform: uppercase;
+    	font-weight: bold;
+    	font-size: 10vw;
+    	top: 130vw;
+    	left: 0;
+    	width: 82vw;
+    	color: black;
+    	background-color: lightblue;
+	}
+
+	.slogan p {
+    	position: absolute;
+    	font-size: 15vw;
+    	top: 190vw;
+    	left: 10vw;
+    	width: 70vw;
+    }
+
+    .study h1 {
+       display: none;
+    }
+
+    .study img[src="film_studies.jpg"] {
+		position: absolute;
+		top: 560vw;
+		left: 0;
+		height: 90vw;
+		width: 100vw;
+	}
+
+	.study p {
+    	position: absolute;
+    	font-size: 17vw;
+    	top: 640vw;
+    	left: 0;
+    	width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 780vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 870vw;
+        left: 0;
+    }
+
+	.research p {
+    	position: absolute;
+    	font-size: 20vw;
+    	top: 900vw;
+    	left: 0;
+    	width: 82vw;
+    }
+
+	.student p {
+    	position: absolute;
+    	font-size: 17vw;
+    	top: 1050vw;
+    	left: 0;
+    }
+
+	.student q {
+    	position: absolute;
+    	font-size: 15vw;
+        top: 1110vw;
+    	left: 2vw;
+    	width: 80vw;   
+	}
+	
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 13vw;
+        font-weight: bold;
+        top: 1178vw;
+        left: 2vw;
+        width: 80vw;  
+    }
+
+	.student img {
+		display: none;
+	}
+
+    .news1 img {
+        position: absolute;
+        top: 1250vw;
+        height: 90vw;
+        width: 100vw;
+    }
+
+	.news1 p {
+		position: absolute;
+	    text-align: left;
+	    font-size: 19vw;
+        font-weight: bold;
+	    top: 1350vw;
+	    width: 100vw;
+	}
+
+    .news2 img {
+        position: absolute;
+        top: 1480vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+	.news2 p {
+	    position: absolute;
+	    text-align: left;
+	    font-size: 19vw;
+        font-weight: bold;
+	    top: 1580vw;
+	    left: 0;
+	}
+
+    .news3 img {
+        position: absolute;
+        top: 1650vw;
+        height: 100vw;
+        width: 100vw;
+    }
+	
+	.news3 p {
+	    position: absolute;
+	    text-align: left;
+	    font-size: 20vw;
+        font-weight: bold;
+	    top: 1750vw;
+	    left: 0;
+	}
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+	.vertical_nav_bar ul {
+	    list-style-type: none;
+	    position: absolute;
+	    font-size: 7vw;
+	    top: 1820vw;
+	    margin: 0;
+	    padding: 0;
+	    width: 5vw;
+	}
+
+	.vertical_nav_bar li a {
+	    text-decoration: none;
+	    display: block;
+	    padding: 0;
+	    color: #000;
+	}
+/* End of reference */
+	.footer h1 {
+		display: inline-block;
+	    position: absolute;
+	    font-family: "Quattrocento", Quattrocento, sans-serif;
+	    color: #ffbf00;
+	    font-size: 7vw;
+	    top: 1829vw;
+	    margin: 0;
+	    padding: 0; 
+	    left: 50vw;
+	    width: 45vw;
+	    overflow: hidden;
+	}
+
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 10vw;
+        padding-bottom: 0;
+        padding: 1vw;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 1688vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 40vw;
+        background-color: #9A55B2;
+    }
+/* End of reference */
+
+@media only screen and (min-width: 100px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+     @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10vw;
+        top: 130vw;
+        left: 0;
+        width: 82vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 15vw;
+        top: 190vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 550vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 17vw;
+        top: 640vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 780vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 870vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 20vw;
+        top: 900vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 17vw;
+        top: 1050vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 15vw;
+        top: 1110vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 13vw;
+        top: 1180vw;
+        left: 2vw;
+        width: 80vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 1250vw;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1350vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 1480vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1580vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 1650vw;
+        height: 100vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        font-weight: bold;
+        top: 1750vw;
+        left: 0;
+    }
+
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 7vw;
+        top: 1820vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 1829vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        margin-top: -22vw;
+        padding-bottom: 1708vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 40vw;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 150px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10vw;
+        top: 110vw;
+        left: 0;
+        width: 82vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 15vw;
+        top: 180vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 540vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 17vw;
+        top: 620vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 780vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 870vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 20vw;
+        top: 900vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 17vw;
+        top: 1050vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 15vw;
+        top: 1110vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 13vw;
+        font-weight: bold;
+        top: 1180vw;
+        left: 2vw;
+        width: 80vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 1250vw;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1350vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 1480vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1580vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 1650vw;
+        height: 100vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        font-weight: bold;
+        top: 1750vw;
+        left: 0;
+    }
+
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 7vw;
+        top: 1820vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 1829vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 34vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 1720vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 25vw;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 200px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10vw;
+        top: 110vw;
+        left: 0;
+        width: 82vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 15vw;
+        top: 180vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 540vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 17vw;
+        top: 620vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 780vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 870vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 20vw;
+        top: 900vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 17vw;
+        top: 1050vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 15vw;
+        top: 1110vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 13vw;
+        font-weight: bold;
+        top: 1180vw;
+        left: 2vw;
+        width: 80vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 1250vw;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1350vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 1480vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1580vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 1650vw;
+        height: 100vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        font-weight: bold;
+        top: 1750vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 7vw;
+        top: 1820vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 1829vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 40vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 1710vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 34vw;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 250px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10vw;
+        top: 110vw;
+        left: 0;
+        width: 82vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 15vw;
+        top: 180vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 540vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 17vw;
+        top: 620vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 780vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        top: 870vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 20vw;
+        top: 900vw;
+        left: 0;
+        width: 82vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 17vw;
+        top: 1050vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 15vw;
+        top: 1110vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 13vw;
+        font-weight: bold;
+        top: 1180vw;
+        left: 2vw;
+        width: 80vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 1250vw;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1350vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 1480vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 19vw;
+        font-weight: bold;
+        top: 1580vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 1650vw;
+        height: 100vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 20vw;
+        font-weight: bold;
+        top: 1750vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 7vw;
+        top: 1820vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 1829vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 42vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 1715vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 300px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10vw;
+        top: 120vw;
+        left: 0;
+        width: 82vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 8vw;
+        top: 180vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 280vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 8vw;
+        top: 350vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 400vw;
+        left: 0;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 15vw;
+        top: 480vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 7vw;
+        top: 500vw;
+        left: 0;
+        width: 97vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 10vw;
+        top: 520vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 8vw;
+        top: 560vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 6vw;
+        top: 573vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 590vw;
+        height: 90vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 670vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 710vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 800vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 830vw;
+        height: 100vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 920vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 950vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 961vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 44vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 845vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 350px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 6vw;
+        top: 100vw;
+        left: 0;
+        width: 100vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 8vw;
+        top: 120vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 210vw;
+        left: 0;
+        height: 65vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 8vw;
+        top: 270vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 310vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 370vw;
+        left: 0;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 7vw;
+        top: 390vw;
+        left: 0;
+        width: 97vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 10vw;
+        top: 410vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 8vw;
+        top: 450vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student img {
+        display: none;
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 6vw;
+        top: 465vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 490vw;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        font-weight: bold;
+        top: 550vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 580vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 680vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 700vw;
+        height: 70vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 760vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 800vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 812vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 45vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 697vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 400px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 8vw;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 2vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 10vw;
+        top: 0;
+        padding: 2vw;
+        width: 30vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 10vw;
+        left: 59vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 7vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 6vw;
+        top: 100vw;
+        left: 0;
+        width: 100vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 8vw;
+        top: 120vw;
+        left: 10vw;
+        width: 70vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 210vw;
+        left: 0;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 8vw;
+        top: 270vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 310vw;
+        left: 0;
+        height: 70vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 12vw;
+        top: 370vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 7vw;
+        top: 390vw;
+        left: 0;
+        width: 97vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 10vw;
+        top: 410vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 8vw;
+        top: 450vw;
+        left: 2vw;
+        width: 80vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 6vw;
+        top: 465vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 490vw;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 8vw;
+        font-weight: bold;
+        top: 550vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 580vw;
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 680vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 700vw;
+        height: 70vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        font-weight: bold;
+        top: 760vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 800vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 812vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 45vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 697vw;
+        background-color: #A993FF;
+    }4
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 450px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 5vw;
+        top: 10vw;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 6vw;
+        top: 0;
+        padding: 2vw;
+        width: 20vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 8vw;
+        left: 70vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 1vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 6vw;
+        top: 90vw;
+        left: 0;
+        width: 100vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 6vw;
+        top: 110vw;
+        left: 10vw;
+        width: 90vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 150vw;
+        left: 0;
+        height: 65vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 6vw;
+        top: 215vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 230vw;
+        left: 0;
+        height: 65vw;
+        width: 100vw;
+    }
+
+    .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 290vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 6vw;
+        top: 310vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 8vw;
+        top: 330vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 6vw;
+        top: 350vw;
+        left: 2vw;
+        width: 100vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 4vw;
+        font-weight: bold;
+        top: 365vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 380vw;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 440vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 460vw;
+        height: 80vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 540vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 560vw;
+        height: 60vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 620vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 640vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 652vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 37vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 547vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 500px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 5vw;
+        top: 8vw;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 6vw;
+        top: 0;
+        padding: 2vw;
+        width: 20vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 6vw;
+        left: 70vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 1vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 6vw;
+        top: 90vw;
+        left: 0;
+        width: 100vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 6vw;
+        top: 110vw;
+        left: 10vw;
+        width: 90vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 150vw;
+        left: 0;
+        height: 65vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 6vw;
+        top: 215vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 230vw;
+        left: 0;
+        height: 65vw;
+        width: 100vw;
+    }
+
+     .research img {
+        display: none;
+    }
+
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 10vw;
+        top: 290vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 6vw;
+        top: 310vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 8vw;
+        top: 330vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 6vw;
+        top: 350vw;
+        left: 2vw;
+        width: 100vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 4vw;
+        font-weight: bold;
+        top: 365vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 380vw;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 440vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 460vw;
+        height: 80vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 540vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 560vw;
+        height: 60vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 620vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 640vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 652vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 36vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 547vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 550px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 5vw;
+        top: 3vw;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 6vw;
+        top: 0;
+        padding: 2vw;
+        width: 20vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 1vw;
+        left: 70vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 1vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 4vw;
+        top: 88vw;
+        left: 0;
+        width: 100vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 4vw;
+        top: 97vw;
+        left: 10vw;
+        width: 90vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 120vw;
+        left: 0;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 4vw;
+        top: 180vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 190vw;
+        left: 0;
+        height: 60vw;
+        width: 100vw;
+    }
+ 
+    .research img {
+        display: none;
+    }
+    
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 7vw;
+        top: 250vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 4vw;
+        top: 260vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 6vw;
+        top: 265vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 4vw;
+        top: 280vw;
+        left: 2vw;
+        width: 100vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 4vw;
+        font-weight: bold;
+        top: 283vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 294vw;
+        height: 55vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 345vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 360vw;
+        height: 75vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 430vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 450vw;
+        height: 60vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 510vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 530vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 542vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 32vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 440vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 600px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */    
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+   }
+ /* End of reference */
+    .header h1 a {
+        position: absolute;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 5vw;
+        top: 3vw;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+/* CSS for dropdown menu taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 6vw;
+        top: 0;
+        padding: 2vw;
+        width: 20vw;
+        border: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        font-size: 1vw;
+        top: 1vw;
+        left: 70vw;
+        padding-left: 10vw;
+        z-index: 1;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 0;
+        box-shadow: 0 rgba(0,0,0,0.2);
+        z-index: 0;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        display: block;
+        font-size: 5vw;
+        padding: 1vw 1vw;
+        color: black;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+/* End of reference */
+    .topnav {
+        display: none;
+    }
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 4vw;
+        top: 88vw;
+        left: 0;
+        width: 100vw;
+        color: black;
+        background-color: lightblue;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 4vw;
+        top: 97vw;
+        left: 10vw;
+        width: 90vw;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 120vw;
+        left: 0;
+        height: 60vw;
+        width: 100vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 4vw;
+        top: 180vw;
+        left: 0;
+        width: 115vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        position: absolute;
+        top: 190vw;
+        left: 0;
+        height: 60vw;
+        width: 100vw;
+    }
+ 
+    .research img {
+        display: none;
+    }
+    
+    .research h1 {
+        position: absolute;
+        text-align: left;
+        font-size: 7vw;
+        top: 250vw;
+        left: 0;
+    }
+
+    .research p {
+        position: absolute;
+        font-size: 4vw;
+        top: 260vw;
+        left: 0;
+        width: 100vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 6vw;
+        top: 265vw;
+        left: 0;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 4vw;
+        top: 280vw;
+        left: 2vw;
+        width: 100vw;   
+    }
+    
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 4vw;
+        font-weight: bold;
+        top: 283vw;
+        left: 2vw;
+        width: 100vw;  
+    }
+
+    .student img {
+        display: none;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 294vw;
+        height: 55vw;
+        width: 100vw;
+    }
+
+    .news1 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 345vw;
+        width: 100vw;
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 360vw;
+        height: 75vw;
+        width: 100vw;
+    }
+
+    .news2 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 430vw;
+        left: 0;
+    }
+
+    .news3 img {
+        position: absolute;
+        top: 450vw;
+        height: 60vw;
+        width: 100vw;
+    }
+    
+    .news3 p {
+        position: absolute;
+        text-align: left;
+        font-size: 6vw;
+        font-weight: bold;
+        top: 510vw;
+        left: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 8vw;
+        top: 530vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        color: #ffbf00;
+        font-size: 7vw;
+        top: 542vw;
+        margin: 0;
+        padding: 0; 
+        left: 50vw;
+        width: 45vw;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 32vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 440vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 30vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 768px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */								
+	html,body 
+	{
+    	width: 100%;
+    	height: 100%;
+    	margin: 0px;
+   	 	padding: 0px;
+    	overflow-x: hidden; 
+	}
+/* End of reference */
+	.header h1 a {
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 3.8vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+/* CSS for horizontal navigation bar. Accessed 29/10/18. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+    .topnav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.7vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+/* End of reference */
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */    
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+    	position: absolute;
+    	font-weight: bold;
+    	text-transform: uppercase;
+    	font-size: 3vw;
+    	top: 25vw;
+    	left: 2vw;
+    	width: 95vw;
+        z-index: 1;
+    	background-color: lightblue;
+    	color: black;
+	}
+
+	.slogan p {
+    	position: absolute;
+    	font-size: 3vw;
+    	top: 35vw;
+    	left: 10vw;
+        z-index: 1;
+        color: white;
+    }
+
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 90vw;
+        left: 0;
+        height: 25vw;
+        width: 40vw;
+    }
+
+	.study p {
+    	position: absolute;
+    	font-size: 3vw;
+    	top: 115vw;
+    	left: 1vw;
+    	width: 50vw;
+	}
+
+    .study img[src="engineering.jpg"] {
+        display: none;
+    }
+
+    .research img {
+        position: absolute;
+        display: block;
+        top: 90vw;
+        left: 55vw;
+        height: 25vw;
+        width: 43vw;
+    }
+    
+    .research h1 {
+        display: none;
+    }	
+
+	.research p {
+    	position: absolute;
+    	font-size: 3vw;
+    	top: 112.5vw;
+    	left: 55vw;
+    	width: 50vw;
+	}
+
+	.student p {
+    	position: absolute;
+    	font-size: 7vw;
+    	top: 118vw;
+    	left: 1vw;
+	}
+
+	.student q {
+    	position: absolute;
+    	font-size: 3vw; 
+    	top: 134vw;
+    	left: 10vw; 
+	}
+
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 3vw;
+        font-weight: bold; 
+        top: 138vw;
+        left: 11vw; 
+    }
+
+	.student img {
+		display: block;
+    	position: absolute;
+    	top: 126vw;
+    	left: 80vw;
+    	height: 18vw;
+    	width: 18vw;
+	}
+
+    .news1 img {
+        position: absolute;
+        top: 150vw;
+        left: 1vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+
+	.news1 p {
+		position:absolute;
+	    text-align: left;
+	   	font-size: 3vw;
+        font-weight: bold; 
+	   	top: 170vw;
+	    width: 30vw;    
+	}
+
+	 .news2 img {
+        position: absolute;
+        top: 150vw;
+        left: 40vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+
+    .news2 p {
+	    position: absolute;
+	    float: left;
+	    font-size: 3vw;
+        font-weight: bold;
+	    top: 170vw;
+	    left: 40vw;
+	}
+    
+    .news3 img {
+        position: absolute;
+        top: 150vw;
+        left: 77.5vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+	
+    .news3 p {
+	    position: absolute;
+	    display: inline-block;
+	    float: right;
+	    font-size: 3vw;
+        font-weight: bold;
+	    top: 173vw;
+	    left: 77.5vw;
+	    padding: 0;
+	    margin: 0;
+	}
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+	.vertical_nav_bar ul {
+	    list-style-type: none;
+	    position: absolute;
+	    font-size: 3vw;
+	    top: 202vw;
+	    margin: 0;
+	    padding: 0;
+	    width: 5vw;
+	}
+
+	.vertical_nav_bar li a {
+	    text-decoration: none;
+	    display: block;
+	    padding: 0;
+	    color: #000;
+	}
+/* End of reference */
+	.footer h1 {
+		display: inline-block;
+	    position: absolute;
+	    font-family: "Quattrocento", Quattrocento, sans-serif;
+	    font-size: 4vw;
+	    top: 207.5vw;
+	    left: 48vw;
+	    margin: 0;
+	    padding: 0;
+	    width: 80vw;
+	    color: #ffbf00;
+	    overflow: hidden;
+	}
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 32vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 111vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 12vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 992px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */                                
+    html,body 
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */
+    .header h1 a {
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 3.8vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+/* CSS for horizontal navigation bar. Accessed 29/10/18. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.6vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+/* End of reference */
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3vw;
+        top: 25vw;
+        left: 2vw;
+        width: 95vw;
+        z-index: 1;
+        background-color: lightblue;
+        color: black;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 3vw;
+        top: 35vw;
+        left: 10vw;
+        z-index: 1;
+        color: white;
+    }
+    
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 90vw;
+        left: 0;
+        height: 25vw;
+        width: 40vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 3vw;
+        top: 115vw;
+        left: 1vw;
+        width: 50vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        display: none;
+    }
+
+    .research img {
+        position: absolute;
+        display: block;
+        top: 90vw;
+        left: 55vw;
+        height: 25vw;
+        width: 43vw;
+    }
+    
+    .research h1 {
+        display: none;
+    }   
+
+    .research p {
+        position: absolute;
+        font-size: 3vw;
+        top: 112.5vw;
+        left: 55vw;
+        width: 50vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 7vw;
+        top: 118vw;
+        left: 1vw;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 3vw; 
+        top: 134vw;
+        left: 10vw; 
+    }
+
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 3vw;
+        font-weight: bold; 
+        top: 138vw;
+        left: 11vw; 
+    }
+
+    .student img {
+        display: block;
+        position: absolute;
+        top: 126vw;
+        left: 80vw;
+        height: 18vw;
+        width: 18vw;
+    }
+
+    .news1 img {
+        position: absolute;
+        top: 150vw;
+        left: 1vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+
+    .news1 p {
+        position:absolute;
+        text-align: left;
+        font-size: 3vw; 
+        font-weight: bold;
+        top: 170vw;
+        width: 30vw;    
+    }
+
+     .news2 img {
+        position: absolute;
+        top: 150vw;
+        left: 40vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+
+    .news2 p {
+        position: absolute;
+        float: left;
+        font-size: 3vw;
+        font-weight: bold;
+        top: 170vw;
+        left: 40vw;
+    }
+    
+    .news3 img {
+        position: absolute;
+        top: 150vw;
+        left: 77.5vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+    
+    .news3 p {
+        position: absolute;
+        display: inline-block;
+        float: right;
+        font-size: 3vw;
+        font-weight: bold;
+        top: 173vw;
+        left: 77.5vw;
+        padding: 0;
+        margin: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 3vw;
+        top: 200vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 4vw;
+        top: 206vw;
+        left: 48vw;
+        margin: 0;
+        padding: 0;
+        width: 80vw;
+        color: #ffbf00;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 32vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 111vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 12vw;
+        padding-bottom: 0;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
+
+@media only screen and (min-width: 1200px) {
+/* CSS to stop page from scrolling. Taken from stackoverflow. Accessed 29/10/18. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */                                
+    html,body 
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+/* End of reference */
+    .header h1 a {
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 3vw;
+        top: 3.8vw;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        color: #ffbf00;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+/* CSS for horizontal navigation bar. Accessed 29/10/18. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+    .topnav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        position: absolute;
+        float: right;
+        font-size: 2vw;
+        top: 2.5vw;
+        left: 37vw;
+        padding: 0;
+        width: 90vw;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        float: left;
+        top: 2vw;
+        width: 15vw;    
+    }
+
+    .topnav li a {
+        display: inline-block;
+        text-decoration: none;
+        float: right; 
+        padding: 0;
+        color: black;
+    }
+/* End of reference */
+/* CSS for image slider taken from youtube tutorial. Accessed 31/10/18. https://www.youtube.com/watch?v=L-vBR3vzOe8 */
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider figure img {
+        width: 20%;
+        float: left;
+    } 
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    }
+/* End of reference */
+    .slogan h1 {
+        position: absolute;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3vw;
+        top: 25vw;
+        left: 2vw;
+        width: 95vw;
+        z-index: 1;
+        background-color: lightblue;
+        color: black;
+    }
+
+    .slogan p {
+        position: absolute;
+        font-size: 3vw;
+        top: 35vw;
+        left: 10vw;
+        z-index: 1;
+        color: white;
+    }
+    
+    .study img[src="film_studies.jpg"] {
+        position: absolute;
+        top: 90vw;
+        left: 0;
+        height: 25vw;
+        width: 40vw;
+    }
+
+    .study p {
+        position: absolute;
+        font-size: 3vw;
+        top: 115vw;
+        left: 1vw;
+        width: 50vw;
+    }
+
+    .study img[src="engineering.jpg"] {
+        display: none;
+    }
+
+    .research img {
+        position: absolute;
+        display: block;
+        top: 90vw;
+        left: 55vw;
+        height: 25vw;
+        width: 43vw;
+    }
+    
+    .research h1 {
+        display: none;
+    }   
+
+    .research p {
+        position: absolute;
+        font-size: 3vw;
+        top: 112.5vw;
+        left: 55vw;
+        width: 50vw;
+    }
+
+    .student p {
+        position: absolute;
+        font-size: 7vw;
+        top: 118vw;
+        left: 1vw;
+    }
+
+    .student q {
+        position: absolute;
+        font-size: 3vw; 
+        top: 134vw;
+        left: 10vw; 
+    }
+
+    .student p:nth-of-type(2) {
+        position: absolute;
+        font-size: 3vw;
+        font-weight: bold; 
+        top: 138vw;
+        left: 11vw; 
+    }
+    
+    .student img {
+        display: block;
+        position: absolute;
+        top: 126vw;
+        left: 80vw;
+        height: 18vw;
+        width: 18vw;
+    }
+    .news1 img {
+        position: absolute;
+        top: 150vw;
+        left: 1vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+
+    .news1 p {
+        position:absolute;
+        text-align: left;
+        font-size: 3vw;
+        font-weight: bold; 
+        top: 170vw;
+        width: 30vw;    
+    }
+
+    .news2 img {
+        position: absolute;
+        top: 150vw;
+        left: 40vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+
+    .news2 p {
+        position: absolute;
+        float: left;
+        font-size: 3vw;
+        font-weight: bold;
+        top: 170vw;
+        left: 40vw;
+    }
+    
+    .news3 img {
+        position: absolute;
+        top: 150vw;
+        left: 77.5vw;
+        height: 20vw;
+        width: 20vw; 
+    }
+    
+    .news3 p {
+        position: absolute;
+        display: inline-block;
+        float: right;
+        font-size: 3vw;
+        font-weight: bold;
+        top: 173vw;
+        left: 77.5vw;
+        padding: 0;
+        margin: 0;
+    }
+/* CSS for vertical navigation bar taken from w3schools. Accessed 29/10/18. https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical */
+    .vertical_nav_bar ul {
+        list-style-type: none;
+        position: absolute;
+        font-size: 3vw;
+        top: 203vw;
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    .vertical_nav_bar li a {
+        text-decoration: none;
+        display: block;
+        padding: 0;
+        color: #000;
+    }
+/* End of reference */
+    .footer h1 {
+        display: inline-block;
+        position: absolute;
+        font-family: "Quattrocento", Quattrocento, sans-serif;
+        font-size: 4vw;
+        top: 208.5vw;
+        left: 48vw;
+        margin: 0;
+        padding: 0;
+        width: 80vw;
+        color: #ffbf00;
+        overflow: hidden;
+    }
+/* CSS for backgroud color to borders for the different sections taken from w3schools. Accessed 31/10/18. https://www.w3schools.com/css/css_border.asp */
+    .header {
+        border: 0px solid black;
+        padding-top: 32vw;
+        padding-bottom: 0;
+        background: #791B99;
+    }
+
+    main {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 115vw;
+        background-color: #A993FF;
+    }
+
+    .footer {
+        border: 0px solid black;
+        padding-top: 0;
+        padding-bottom: 12vw;
+        background-color: #9A55B2;
+    }
+/* End of reference */    
+}
