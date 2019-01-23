@@ -142,7 +142,7 @@ GET http://127.0.0.1/books/1?allEntities=true
 
 Updates the Book with the specified `bookID`. Fields to be updated should be included as the body of the PUT request.
 
-Accepted fields: `title`, `isbn`
+Accepted fields: `title`, `isbn`, 'author'
 
 ```
 PUT http://127.0.0.1/books/1
@@ -175,26 +175,6 @@ POST http://127.0.0.1/books
     "author": "Spencer Du"
 }
 ```
-
-**POST /:bookID/authors**
-
-Adds an Author to the list of authors for the Book with the specified `bookID`. Will create the Author if an Author with matching details is not found. Fields for the Author should be included in the body of the POST request
-
-Accepted fields: `name`
-
-```
-POST http://127.0.0.1/books/1/authors
-{"name": "David"}
-```
-
-**POST /:bookID/authors/:authorID**
-
-Adds the Author with the specified `auhtorID` to the list of authors of the Book with the specified `bookID`
-
-```
-POST http://127.0.0.1/books/1/authors/2
-```
-
 ### `users/...`
 
 **GET /**
@@ -306,7 +286,7 @@ DELETE http://127.0.0.1/loans/1
 Returns a list of all past exam papers in the Database
 
 ```
-GET http://127.0.0.1/loans
+GET http://127.0.0.1/exams
 ```
 
 **GET /:examID**
