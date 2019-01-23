@@ -321,6 +321,8 @@ Deletes the past exam paper with the specified `examID`
 ```
 DELETE http://127.0.0.1/exams/1
 ```
+
+
 ## journals/...
 
 **GET /**
@@ -360,6 +362,8 @@ POST http://127.0.0.1/journals
     "issn":
 }
 ```
+
+
 **DELETE /:journalID**
 
 Deletes the Journal with the specified `journalID`
@@ -375,6 +379,8 @@ DELETE http://127.0.0.1/journals/1
 Searches for a particular item in the database. Parameters are used to control what type of item being searched for and to supply fields to match.
 
 Parameters accepted: `type` + [`title`, `isbn`, 'author'] + [`name`] + [`name`, `barcode`, `memberType`] + [`title`. `journal`, `issn`] + [`title`, `module`, `course`, `link`] + [`user`, `book`, `dueDate`]
+
+
 
 ```
 GET http://127.0.0.1/search?type=book&title=javascript
