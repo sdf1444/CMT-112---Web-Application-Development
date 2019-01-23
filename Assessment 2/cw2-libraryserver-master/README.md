@@ -149,6 +149,7 @@ PUT http://127.0.0.1/books/1
 {
     "title": "Building Library Systems",
     "isbn": "3985789305"
+    "author": "Spencer Du
 }
 ```
 
@@ -164,13 +165,14 @@ DELETE http://127.0.0.1/books/1
 
 Creates a new Book. Fields for the Book should be included as the body of the POST request
 
-Accepted fields: `title`, `isbn`
+Accepted fields: `title`, `isbn`, 'author'
 
 ```
 POST http://127.0.0.1/books
 {
     "title": "Building Library Systems",
-    "isbn": "3985789305"
+    "isbn": "3985789305",
+    "author": "Spencer Du"
 }
 ```
 
@@ -256,18 +258,6 @@ Returns the list of Loans for the User with the specified `userID`.
 ```
 POST http://127.0.0.1/users/1/loans
 ```
-
-**POST /:userID/loans/:bookID**
-
-Creates or Updates a Loan for the User with the specified `userID` and the Book with the specified `bookID`. Fields to be added to or updated in the Loan should be included in the body of the POST request
-
-Accepted body fields: `dueDate`
-
-```
-POST http://127.0.0.1/users/1/loans/2
-{"dueDate": "2018-12-31"}
-```
-
 ### `loans/...`
 
 **GET /**
@@ -294,15 +284,108 @@ Accepted body fields: `dueDate`
 
 ```
 GET http://127.0.0.1/loans/1
-{"dueDate": "2018-12-31"}
-```
+{
 
+"user": Martin Chorley
+"book": "Laughing for No Reason"
+"dueDate": "2018-12-31"
+
+}
+```
 **DELETE /:loanID**
 
 Deletes the Loan with the specified `loanID`
 
 ```
 DELETE http://127.0.0.1/loans/1
+```
+### `exams/...`
+
+**GET /**
+
+Returns a list of all past exam papers in the Database
+
+```
+GET http://127.0.0.1/loans
+```
+
+**GET /:examID**
+
+Returns the details of the past exam paper with the specified `examID`
+
+```
+GET http://127.0.0.1/exams/1
+```
+
+**PUT /:examID**
+
+Updates the details of the past exam paper with the specified `examID`. Fields to be updated should be included in the body of the PUT request
+
+Accepted body fields: `title`, 'module', 'course', 'link'
+
+```
+GET http://127.0.0.1/exams/1
+{
+
+"title":
+"module":
+"course":
+"link":
+
+}
+```
+**DELETE /:examID**
+
+Deletes the past exam paper with the specified `examID`
+
+```
+DELETE http://127.0.0.1/exams/1
+```
+## 'journals/...'
+
+**GET /**
+
+Returns a list of all Journals in the Database
+
+```
+GET http://127.0.0.1/journals
+```
+**PUT /:journalID**
+
+Updates the details of the Loan with the specified `loanID`. Fields to be updated should be included in the body of the PUT request
+
+Accepted body fields: `title`, 'journal', 'issn'
+
+GET http://127.0.0.1/journals/1
+{
+
+"title":
+"journal": 
+"issn":
+
+}
+
+```
+**POST /**
+
+Creates a new journal. Fields for the new Journal should be included in the body of the POST request.
+
+Accepted body fields: `title`, `journal`, `memberType`
+
+```
+POST http://127.0.0.1/journals
+{
+    "title":
+    "journal":
+    "issn":
+}
+```
+**DELETE /:journalID**
+
+Deletes the Journal with the specified `journalID`
+
+```
+DELETE http://127.0.0.1/journals/1
 ```
 
 ### `/search`
@@ -311,12 +394,15 @@ DELETE http://127.0.0.1/loans/1
 
 Searches for a particular item in the database. Parameters are used to control what type of item being searched for and to supply fields to match.
 
-Parameters accepted: `type` + [`title`, `isbn`] + [`name`] + [`name`, `barcode`, `memberType`]
+Parameters accepted: `type` + [`title`, `isbn`, 'author'] + [`name`] + [`name`, `barcode`, `memberType`] + ['title'. 'journal', 'issn'] + ['title', 'module', 'course', 'link'] + ['user', 'book', 'dueDate']
 
 ```
 GET http://127.0.0.1/search?type=book&title=javascript
 GET http://127.0.0.1/search?type=author&name=david
 GET http://127.0.0.1/search?type=user&barcode=3265897236
+GET http://127.0.0.1/search?type=journal&journal=bmj
+GET http://127.0.0.1/search?type=exam&module=CMT-112
+GET http://127.0.0.1/search?type=loan&user=Martin Chorley
 ```
 
 ## Editing the server
