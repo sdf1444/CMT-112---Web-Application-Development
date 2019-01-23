@@ -380,8 +380,6 @@ Searches for a particular item in the database. Parameters are used to control w
 
 Parameters accepted: `type` + [`title`, `isbn`, 'author'] + [`name`] + [`name`, `barcode`, `memberType`] + [`title`. `journal`, `issn`] + [`title`, `module`, `course`, `link`] + [`user`, `book`, `dueDate`]
 
-
-
 ```
 GET http://127.0.0.1/search?type=book&title=javascript
 GET http://127.0.0.1/search?type=author&name=david
@@ -390,7 +388,6 @@ GET http://127.0.0.1/search?type=journal&journal=bmj
 GET http://127.0.0.1/search?type=exam&module=CMT-112
 GET http://127.0.0.1/search?type=loan&user=Martin Chorley
 ```
-
 
 ## Editing the server
 
