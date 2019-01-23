@@ -142,7 +142,7 @@ GET http://127.0.0.1/books/1?allEntities=true
 
 Updates the Book with the specified `bookID`. Fields to be updated should be included as the body of the PUT request.
 
-Accepted fields: `title`, `isbn`, 'author'
+Accepted fields: `title`, `isbn`, `author`
 
 ```
 PUT http://127.0.0.1/books/1
@@ -165,7 +165,7 @@ DELETE http://127.0.0.1/books/1
 
 Creates a new Book. Fields for the Book should be included as the body of the POST request
 
-Accepted fields: `title`, `isbn`, 'author'
+Accepted fields: `title`, `isbn`, `author`
 
 ```
 POST http://127.0.0.1/books
@@ -260,7 +260,7 @@ GET http://127.0.0.1/loans/1
 
 Updates the details of the Loan with the specified `loanID`. Fields to be updated should be included in the body of the PUT request
 
-Accepted body fields: `dueDate`
+Accepted body fields: `user`, `book`, `dueDate`
 
 ```
 GET http://127.0.0.1/loans/1
@@ -301,7 +301,7 @@ GET http://127.0.0.1/exams/1
 
 Updates the details of the past exam paper with the specified `examID`. Fields to be updated should be included in the body of the PUT request
 
-Accepted body fields: `title`, 'module', 'course', 'link'
+Accepted body fields: `title`, `module`, `course`, `link`
 
 ```
 GET http://127.0.0.1/exams/1
@@ -334,7 +334,7 @@ GET http://127.0.0.1/journals
 
 Updates the details of the Loan with the specified `loanID`. Fields to be updated should be included in the body of the PUT request
 
-Accepted body fields: `title`, 'journal', 'issn'
+Accepted body fields: `title`, `journal`, `issn`
 
 GET http://127.0.0.1/journals/1
 {
@@ -374,7 +374,7 @@ DELETE http://127.0.0.1/journals/1
 
 Searches for a particular item in the database. Parameters are used to control what type of item being searched for and to supply fields to match.
 
-Parameters accepted: `type` + [`title`, `isbn`, 'author'] + [`name`] + [`name`, `barcode`, `memberType`] + ['title'. 'journal', 'issn'] + ['title', 'module', 'course', 'link'] + ['user', 'book', 'dueDate']
+Parameters accepted: `type` + [`title`, `isbn`, 'author'] + [`name`] + [`name`, `barcode`, `memberType`] + [`title`. `journal`, `issn`] + [`title`, `module`, `course`, `link`] + [`user`, `book`, `dueDate`]
 
 ```
 GET http://127.0.0.1/search?type=book&title=javascript
