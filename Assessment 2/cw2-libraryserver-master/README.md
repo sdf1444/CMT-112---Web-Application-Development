@@ -323,7 +323,7 @@ DELETE http://127.0.0.1/exams/1
 ```
 
 
-## journals/...
+### journals/...
 
 **GET /**
 
