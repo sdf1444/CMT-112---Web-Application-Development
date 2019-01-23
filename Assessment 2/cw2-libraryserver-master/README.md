@@ -321,7 +321,7 @@ Deletes the past exam paper with the specified `examID`
 ```
 DELETE http://127.0.0.1/exams/1
 ```
-## 'journals/...'
+## journals/...
 
 **GET /**
 
@@ -384,6 +384,7 @@ GET http://127.0.0.1/search?type=journal&journal=bmj
 GET http://127.0.0.1/search?type=exam&module=CMT-112
 GET http://127.0.0.1/search?type=loan&user=Martin Chorley
 ```
+
 
 ## Editing the server
 
