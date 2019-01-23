@@ -1,0 +1,9 @@
+body {
+	background-color: #9A55B2;
+}
+
+.header h1 a {
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    text-decoration: none;
+    color: #ffbf00;
+}

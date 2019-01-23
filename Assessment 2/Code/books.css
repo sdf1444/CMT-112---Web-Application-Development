@@ -1,0 +1,1612 @@
+/* CSS to keep body fixed at all media queries. Taken from first assignment and originally from w3school.com developer tools. Accessed 20/01/19. */
+body {  
+  position: relative; 
+  font-family: "Open Sans", sans-serif;
+  top: 0px;
+  line-height: 1.25;
+  min-height: 100%;
+  background-color: #9A55B2;
+}
+/* End of reference. */
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+table tr {
+  background-color: #B0E0E6;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th, table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+table td img { 
+  text-align: center; 
+}
+
+#search2 {
+  display: none;
+}
+
+/* Reformated table */
+@media screen and (max-width: 640px) {
+  table { 
+    border: 0; 
+  }
+
+  table thead { 
+    display: none; 
+  }
+
+  table tr {
+    display: block;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  /* CSS ::before selector taken from w3schools. Accessed 20/01/18. https://www.w3schools.com/cssref/sel_before.asp */
+  table td:before {
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+  }
+  /* End of reference. */
+
+  /* CSS :nth-of-type():before selector taken from css-tricks. Accessed 20/01/19. https://css-tricks.com/responsive-data-tables/ */
+  td:nth-of-type(1):before { 
+    content: "ID"; 
+  }
+  td:nth-of-type(2):before { 
+    content: "Title"; 
+  }
+  td:nth-of-type(3):before { 
+    content: "ISBN"; 
+  }
+  td:nth-of-type(4):before { 
+    content: "Author"; 
+  }
+  td:nth-of-type(5):before { 
+    content: "Created At"; 
+  }
+  td:nth-of-type(6):before { 
+    content: "Updated At"; 
+  } 
+  /* End of reference */
+
+  /* CSS :last-child selector taken from w3schools. Accessed 20/01/19. https://www.w3schools.com/cssref/sel_only-child.asp */
+  table td:last-child { 
+    border-bottom: 0;
+  }
+  /* End of reference */
+}
+
+@media only screen and (min-width: 50px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    /* End of reference */
+    overflow: auto; 
+  }
+
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 15%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    border: 15px;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #search {
+    position: absolute;
+    top: 40vw;
+  }
+
+  #addbook {
+    position: absolute;
+    top: 120vw;
+  }
+
+  form {
+    width: 1vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 230vw;
+    width: 230vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 300vw;
+  }
+}
+
+@media only screen and (min-width: 100px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow: auto; 
+  }
+  /* End of reference */
+
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #books {
+    position: absolute;
+    top: 8vw;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 70vw;
+  }
+
+  form {
+    width: 34vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 120vw;
+    width: 100vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 150vw;
+  }
+}
+
+@media only screen and (min-width: 150px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {    
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow: auto; 
+  }
+  /* End of reference */
+
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #books {
+    position: absolute;
+    top: 15vw;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 60vw;
+  }
+
+  form {
+    width: 60vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 100vw;
+    width: 100vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 120vw;
+  }
+}
+
+@media only screen and (min-width: 200px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #books {
+    position: absolute;
+    top: 20vw;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 50vw;
+  }
+
+  form {
+    width: 70vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 80vw;
+    width: 100vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 100vw;
+  }
+}
+
+@media only screen and (min-width: 250px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 41vw;
+    right: 0;
+  }
+
+  form {
+    width: 75vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 50vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 65vw;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+}
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 33vw;
+    right: 0;
+  }
+
+  form {
+    width: 80vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 40vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 50vw;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 33vw;
+    right: 0;
+  }
+
+  form {
+    width: 80vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 40vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 50vw;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 30vw;
+    right: 0;
+  }
+
+  form {
+    width: 85vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 35vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 45vw;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 8vw;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 2vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10vw;
+    top: 0;
+    padding: 2vw;
+    width: 30vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 10vw;
+    left: 59vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 7vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 30vw;
+    right: 0;
+  }
+
+  form {
+    width: 87vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 35vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 45vw;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 5vw;
+    top: 8vw;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 6vw;
+    top: 0;
+    padding: 2vw;
+    width: 20vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 6vw;
+    left: 70vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 1vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  /* End of reference */
+  .topnav {
+    display: none;
+  }
+
+  #books {
+    position: absolute;
+    top: 10vw;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 21vw;
+    right: 0;
+  }
+
+  form {
+    width: 87vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 25vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 30vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 5vw;
+    top: 8vw;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 6vw;
+    top: 0;
+    padding: 2vw;
+    width: 20vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 6vw;
+    left: 70vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 1vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #books {
+    position: absolute;
+    top: 12vw;
+  }
+
+  #addBook {
+    position: absolute;
+    top: 22vw;
+    right: 0;
+  }
+
+  form {
+    width: 87vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 25vw;
+    width: 40vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 30vw;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+  
+  .header h1 a {
+    position: absolute;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    font-size: 5vw;
+    top: 3vw;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    color: #ffbf00;
+  }
+  
+  /* CSS for dropdown menu taken from first assignment and originally w3schools. Accessed 20/01/19. https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 6vw;
+    top: 0;
+    padding: 2vw;
+    width: 20vw;
+    border: none;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    font-size: 1vw;
+    top: 1vw;
+    left: 70vw;
+    padding-left: 10vw;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 0;
+    z-index: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    padding: 1vw 1vw;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* End of reference */
+  
+  .topnav {
+    display: none;
+  }
+
+  #books {
+    position: absolute;
+    top: 10vw;
+  }
+
+  #addBook {
+    display: none;
+  }
+
+  #search {
+    position: absolute;
+    top: 20vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 25vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body 
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */   
+   
+  .header h1 a {
+    position: absolute;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    text-decoration: none;
+    font-size: 2.8vw;
+    top: 2vw;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    color: #ffbf00;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+  
+  /* CSS for horizontal navigation bar taken from first assignment. Accessed 20/01/19. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+  .topnav {
+    display: inline-block;
+    text-align: right;
+  }
+
+  .topnav ul {
+    list-style-type: none;
+    position: absolute;
+    float: right;
+    font-size: 2vw;
+    top: 2.5vw;
+    left: 24vw;
+    padding: 0;
+    width: 90vw;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .topnav ul li {
+    display: inline-block;
+    float: left;
+    top: 2vw;
+    width: 15vw;    
+  }
+
+  .topnav li a {
+    display: inline-block;
+    text-decoration: none;
+    float: right; 
+    padding: 0;
+    color: black;
+  }
+  /* End of reference */
+  
+  #addBook {
+    display: none;
+  }
+
+  form {
+    width: 46vw;
+  }
+
+  #books {
+    position: absolute;
+    top: 6vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 15vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 20vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body 
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */
+   
+  .header h1 a {
+    position: absolute;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    text-decoration: none;
+    font-size: 2.5vw;
+    top: 0.5vw;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    color: #ffbf00;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+  
+  .topnav {
+    display: inline-block;
+    text-align: right;
+  }
+
+  /* CSS for horizontal navigation bar taken from first assignment. Accessed 20/01/19. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+  .topnav ul {
+    list-style-type: none;
+    position: absolute;
+    float: right;
+    font-size: 2vw;
+    top: 0.9vw;
+    left: 23vw;
+    padding: 0;
+    width: 90vw;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .topnav ul li {
+    display: inline-block;
+    float: left;
+    top: 2vw;
+    width: 15vw;    
+  }
+
+  .topnav li a {
+    display: inline-block;
+    text-decoration: none;
+    float: right; 
+    padding: 0;
+    color: black;
+  }
+  /* End of reference */
+
+  #addBook {
+    display: none;
+  }  
+
+  form {
+    width: 45vw;
+  }
+
+  #books {
+    position: absolute;
+    top: 4vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 11vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 15vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* CSS to stop page from scrolling. Taken from first assignment and stackoverflow. Accessed 20/01/19. https://stackoverflow.com/questions/43441124/width-100-on-top-of-body-requires-scrolling */  
+  html,body 
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+  /* End of reference */   
+
+  .header h1 a {
+    position: absolute;
+    font-family: "Quattrocento", Quattrocento, sans-serif;
+    text-decoration: none;
+    font-size: 2.5vw;
+    top: 0.5vw;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    color: #ffbf00;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  /* CSS for horizontal navigation bar taken from first assignment. Accessed 20/01/19. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav */
+  .topnav {
+    display: inline-block;
+    text-align: right;
+  }
+
+  .topnav ul {
+    list-style-type: none;
+    position: absolute;
+    float: right;
+    font-size: 2vw;
+    top: 0.9vw;
+    left: 23vw;
+    padding: 0;
+    width: 90vw;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .topnav ul li {
+    display: inline-block;
+    float: left;
+    top: 2vw;
+    width: 15vw;    
+  }
+
+  .topnav li a {
+    display: inline-block;
+    text-decoration: none;
+    float: right; 
+    padding: 0;
+    color: black;
+  }
+  /* End of reference */
+
+  #addBook {
+    display: none;
+  }  
+
+  form {
+    width: 35vw;
+  }
+
+  #search {
+    position: absolute;
+    top: 10vw;
+  }
+
+  .table {
+    position: absolute;
+    top: 13vw;
+  }
+}
